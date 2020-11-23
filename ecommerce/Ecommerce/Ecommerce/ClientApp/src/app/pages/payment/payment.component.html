@@ -1,0 +1,83 @@
+<section class="payment-detail">
+  <div class="padding-15">
+    <div class="header">
+      <div class="header-wrap">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/images/logo/musa_logo.png" alt="musa-logo">
+          </a>
+        </div>
+        <h1>Thông tin thanh toán</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="padding-15">
+      <div class="payment-wrap">
+        <div class="row no-gutters align-items-center">
+          <div class="col-5">
+            <div class="image">
+              <img src="assets/images/payment.png" alt="payment">
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="address-info info-group">
+              <div class="address-info-wrap info-group-wrap">
+                <h6 class="title">Địa chỉ giao hàng</h6>
+                <div class="wrap_content">
+                  <div class="content" *ngIf="users">
+                    <h6>{{users[0].fullName}}</h6>
+                    <div class="d-flex flex-column">
+                      <p>{{users[0].address}}</p>
+                      <span>Số điện thoại: {{users[0].phoneNumber}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-info info-group">
+              <div class="order-info-wrap info-group-wrap">
+                <h6 class="title">Thông tin đơn hàng</h6>
+                <div class="wrap_content">
+                  <ul>
+                    <li class="order-item" *ngFor="let c of cartItem">
+                      <h6>{{c.qty}} x {{c.name}}</h6>
+                      <span class="price">{{c.price | number}}đ</span>
+                    </li>
+                  </ul>
+                  <div class="total-price">
+                    <h6>Thành tiền:</h6>
+                    <span>{{totalPrice | number}}đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-method info-group">
+              <div class="payment-method-wrap info-group-wrap">
+                <h6 class="title">Chọn phương thức thanh toán</h6>
+                <div class="wrap_content">
+                  <label>
+                    <input #clickCash value="isCashClick" type="radio" (click)="buttonAction(clickCash)"
+                      [checked]='true' checked="checked" name="payment-method">
+                    Thanh toán bằng tiền mặt khi nhận hàng
+                  </label>
+                  <label>
+                    <input #clickPayPal value="isPayPalClick" (click)="buttonAction(clickPayPal)" type="radio"
+                      name="payment-method">
+                    Thanh toán bằng PayPal
+                  </label>
+                  <button #cashLink class="btn btn-success btn-cash" (click)="cashPayment()">Thanh toán bằng tiền
+                    mặt</button>
+                    <div #paypalLink class="paypal-btn">
+                      <div #paypalRef> </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

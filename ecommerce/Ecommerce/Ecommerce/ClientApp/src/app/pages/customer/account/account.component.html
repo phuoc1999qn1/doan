@@ -1,0 +1,18 @@
+<h4>Thông tin tài khoản</h4>
+<!-- <div class="account-header">
+    <div class="account-header-left">
+        <a href="">Cập nhập thông tin tài khoản</a>
+    </div>
+    <div class="account-header-left">
+        <a href="">Đổi mật khẩu</a>
+    </div>
+</div> -->
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" [routerLink]="['/customer/account/edit-account']" data-toggle="tab" role="tab"
+            aria-controls="nav-home" aria-selected="true">Cập nhập thông tin tài khoản</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" [routerLink]="['/customer/account/edit-password']" data-toggle="tab" role="tab"
+            aria-controls="nav-profile" aria-selected="false">Đổi mật khẩu</a>
+    </div>
+</nav>
+<router-outlet></router-outlet>

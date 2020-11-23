@@ -1,0 +1,41 @@
+<h4>Sổ địa chỉ</h4>
+<section class="address" *ngIf="users">
+
+    <div class="account-address" *ngIf="address !== null && !addressEdit ">
+        <div class="info">
+            <div class="name">
+                {{users[0].fullName}}
+            </div>
+            <div class="address">
+                <span>Địa chỉ:</span>
+                {{users[0].address}}
+            </div>
+            <div class="phone">
+                <span>Điện thoại:</span>
+                {{users[0].phoneNumber}}
+            </div>
+
+        </div>
+        <div class="action">
+            <a (click)="edit()" class="edit">Chỉnh sửa</a>
+        </div>
+    </div>
+
+    <div class="account-address" *ngIf="address === null || addressEdit">
+        <form class="form" [formGroup]="formAddAddress" (ngSubmit)="AddAddress()">
+            <div class="form-item">
+                <label for="address">Địa chỉ:</label>
+                <input name="address" formControlName="address" value="{{address}}"
+                    [ngClass]="{ 'is-invalid': submitted && f.address.errors}">
+                <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+                    <div *ngIf="f.address.errors.required">Địa chỉ không được để trống</div>
+                </div>
+            </div>
+            <div class="form-item text-center">
+                <button type="submit" class="btn-submit">
+                    Cập nhật
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

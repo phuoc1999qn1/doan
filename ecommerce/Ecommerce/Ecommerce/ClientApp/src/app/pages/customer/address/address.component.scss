@@ -1,0 +1,60 @@
+h4 {
+  font-size: 25px;
+  line-height: 21px;
+  font-weight: 300;
+  margin: 20px 0px 15px;
+}
+.account-address {
+  background-color: rgb(255, 255, 255);
+  padding: 17px;
+  border-radius: 4px;
+  margin: 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+
+  a {
+    cursor: pointer;
+  }
+
+  span {
+    color: rgb(120, 120, 120);
+  }
+
+  .name {
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+  }
+
+  .address {
+    margin: 0px 0px 5px;
+  }
+
+  form {
+    font-size: 15px;
+    width: 100%;
+    .form-item {
+      align-items: center;
+      margin: 0px 0px 15px;
+    }
+    label {
+      padding-right: 15px;
+    }
+    input {
+      height: 30px;
+      width: 80%;
+    }
+    button {
+      border: 0px;
+      width: 150px;
+      height: 30px;
+      border-radius: 4px;
+      color: rgb(74, 74, 74);
+      font-size: 14px;
+      background: rgb(216, 191, 216);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,302 @@
+<section class="product-phone-classify">
+  <div class="header">
+    <div class="padding-15">
+      <div class="breadcrumb">
+        <a href="" class="breadcrumb-items">Trang chủ</a>
+        <a [routerLink]="['/product-phone']" class="breadcrumb-items">Điện Thoại - Máy tính bảng</a>
+        <a href="" class="breadcrumb-items" *ngFor="let l of listProduct">{{l.productName}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="padding-15">
+      <div class="row">
+        <!-- LEFT SIDE -->
+        <div class="body-left">
+          <div class="filter">
+            <div class="filter-header">
+              <h6>DANH MỤC SẢN PHẨM</h6>
+            </div>
+            <div class="filter-suppliers filter-group">
+              <h6>Điện thoại - máy tính bảng</h6>
+              <ul>
+                <li *ngFor="let n of listCategoryName">
+                  <a href="product-phone-classify;proId={{n.productId}}" style="cursor: pointer;">{{n.productName}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-suppliers filter-group">
+              <h6>Miễn phí giao hàng</h6>
+              <ul>
+                <li>
+                  <a href="">Có</a>
+                </li>
+                <li>
+                  <a href="">Không</a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-suppliers filter-group">
+              <h6>THƯƠNG HIỆU</h6>
+              <ul>
+                <li>
+                  <a href="">Samsung</a>
+                </li>
+              </ul>
+            </div>
+            <div class="filter-price">
+              <h6>Giá</h6>
+              <input class="input-price form-control" type="text">
+              <input class="input-price form-control" type="text">
+              <button class="btn btn-filter-price">Áp dụng</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE  -->
+        <div class="body-right">
+          <div class="phone-tablet">
+            <div class="title" *ngFor="let l of listProduct">
+              <h5>{{l.productName}}:
+                <span>{{productsQuantity.length}} kết quả</span>
+              </h5>
+            </div>
+            <div class="slick-container">
+              <span class="prev arrow-left">
+                <i class="fi flaticon-left-chevron"></i>
+              </span>
+              <div class="slick-banner">
+                <div class="slick-banner_item">
+                  <a href="https://tiki.vn/chuong-trinh/tiki-samsung-now?ref=main-category-banner">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w885/ts/banner/e0/59/a2/630df4d276deffdc03ccf872e7f76965.jpg"
+                      alt="">
+                  </a>
+                </div>
+                <div class="slick-banner_item">
+                  <a href="https://tiki.vn/chuong-trinh/tiki-samsung-now?ref=main-category-banner">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w885/ts/banner/77/2d/1e/d2b0e2967e4cbcacd25a0d715edf87da.jpg"
+                      alt="">
+                  </a>
+                </div>
+                <div class="slick-banner_item">
+                  <a href="https://tiki.vn/chuong-trinh/tiki-samsung-now?ref=main-category-banner">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w885/ts/banner/50/8d/d0/e06f2b39127f0aff8adbd3bff951f439.jpg"
+                      alt="">
+                  </a>
+                </div>
+                <div class="slick-banner_item">
+                  <a href="https://tiki.vn/chuong-trinh/tiki-samsung-now?ref=main-category-banner">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w885/ts/banner/4b/9f/a5/699da0968620a644762842cf1f42e0ac.jpg"
+                      alt="">
+                  </a>
+                </div>
+              </div>
+              <span class="next arrow-right">
+                <i class="fi flaticon-right"></i>
+              </span>
+            </div>
+
+            <div class="banner-block">
+              <div class="banner-block_advertise">
+                <a class="advertise" href="">
+                  <img src="https://salt.tikicdn.com/ts/categoryblock/51/72/3f/ec09eb1e7022d1eccc2a9f4f847f6577.jpg"
+                    alt="">
+                </a>
+                <a class="advertise" href="">
+                  <img src="https://salt.tikicdn.com/ts/categoryblock/51/72/3f/ec09eb1e7022d1eccc2a9f4f847f6577.jpg"
+                    alt="">
+                </a>
+              </div>
+              <div class="banner-block_services">
+                <div class="row">
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/08/9c/34/f6d5f009affe02279a660fde9a457c56.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/b1/ff/14/2414ca220c7c25aef2466b438a550b2e.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/64/be/16/3ef8d99ca439a98dde70b5435930ec46.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/6c/ab/e0/d6631db3ab962eb7dee3822f1a53afea.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/d2/96/db/b21869c7a46908858747381969b6262e.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                  <div class="col-2">
+                    <a class="block-link" href="https://tiki.vn/chuong-trinh/chinh-sach-hoan-tien?src=static_block"
+                      title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/9a/c4/6d/11b0fa667a59a61c1fa3f064d4771bb4.jpg"
+                        alt="">
+                      <span class="title"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="banner-block_devices">
+                <div class="row">
+                  <div class="col-3">
+                    <a class="block-link" href="https://tiki.vn/dien-thoai-smartphone/c1795?src=static_block" title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/73/0b/bb/89bb46e6dbfe8f2f6a36cefa88f808be.png"
+                        alt="">
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a class="block-link" href="https://tiki.vn/dien-thoai-smartphone/c1795?src=static_block" title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/d7/26/e2/d4baf158b6bc56b3cddd4915870bab8e.png"
+                        alt="">
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a class="block-link" href="https://tiki.vn/dien-thoai-smartphone/c1795?src=static_block" title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/71/fb/1f/4fb18ffe80f69dbb4ce1c1303d3277b4.png"
+                        alt="">
+                    </a>
+                  </div>
+                  <div class="col-3">
+                    <a class="block-link" href="https://tiki.vn/dien-thoai-smartphone/c1795?src=static_block" title="">
+                      <img src="https://salt.tikicdn.com/ts/categoryblock/17/ac/38/f569f98e61a0a081373328c33a810f0f.png"
+                        alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="option-box-wrap">
+              <div class="option-box">
+                <div class="group-left">
+                  <span>Ưu tiên xem: </span>
+                  <div class="sort-list">
+                    <ul>
+                      <li><a href="">Hàng mới</a></li>
+                      <li><a href="">Bán chạy</a></li>
+                      <li><a href="">Giảm giá nhiều</a></li>
+                      <li><a href="">Giá thấp</a></li>
+                      <li><a href="">Giá cao</a></li>
+                      <li><a href="">Chọn lọc</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="group-right">
+                  <input type="search" class="form-control" placeholder="Tìm trong Điện Thoại - Máy Tính Bảng">
+                  <button class="btn btn-search">
+                    <i class="fi flaticon-loupe"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="check-supported">
+              <div class="checkbox">
+                <label class="checkbox-container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <span>Xem sản phẩm giao từ nước ngoài
+                  -
+                  <a href="">Tìm hiểu</a>
+                </span>
+              </div>
+
+              <div class="is-tikinow">
+                <label class="checkbox-container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                  <div class="tikinow-logo">
+                    <img src="assets/images/logo/tikinow.png" alt="tikinow">
+                  </div>
+                </label>
+                <span>Xem sản phẩm hỗ trợ TikiNOW giao nhanh
+                  -
+                  <a href="">Tìm hiểu</a>
+                </span>
+              </div>
+            </div>
+
+            <div class="products-box-list">
+              <div class="row no-gutters" *ngIf="products.totalRecord">
+                <div [ngClass]="{'disable' : p.unitsInStock == 0}" class="products-box-list_item col-md-3" *ngFor="let p of products.data">
+                  <a href="product-detail;id={{p.proDetailsId}}" style="cursor: pointer;"
+                    class="product-hover">
+                    <div class="product-img">
+                      <img src="https://{{p.image}}" alt="Điện Thoại iPhone 11 Pro 256GB - Hàng Nhập Khẩu">
+                    </div>
+                    <div class="badge-service">
+                      <div class="badge-service_item">
+                        <img src="./assets/images/logo/tikinow.png" alt="">
+                      </div>
+                      <span>GIAO TRONG NGÀY</span>
+                    </div>
+                    <p class="title">{{p.proName}}</p>
+                    <p class="price">
+                      {{p.price | number}}₫
+                      <span class="percent">-26%</span>
+                      <span class="original">36.990.000 ₫</span>
+                    </p>
+                    <span *ngIf="p.unitsInStock === 0" style="color: var(--red);">Hết hàng</span>
+                  </a>
+                  <div *ngIf="p.unitsInStock === 0" class="sold-out">
+                    <img src="assets/images/sold-out.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="list-pager">
+            <ul class="pagination justify-content-end">
+              <li class="page-item">
+                <a class="page-link btn-prev" (click)="searchPrevious()" href="javascript:void(0)" tabindex="-1"
+                  aria-disabled="true">
+                  <span class="fi flaticon-left-chevron"></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">{{products.page}}</a></li>
+              <!-- <li class="page-item" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+              <li class="page-item">
+                <a class="page-link btn-next" (click)="searchNext()" href="javascript:void(0)">
+                  <span class="fi flaticon-right"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

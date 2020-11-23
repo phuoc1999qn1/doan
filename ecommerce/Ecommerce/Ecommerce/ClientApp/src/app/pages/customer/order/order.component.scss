@@ -1,0 +1,17 @@
+h4 {
+  font-size: 25px;
+  line-height: 21px;
+  font-weight: 300;
+  margin: 20px 0px 15px;
+}
+
+.table-hover {
+  tbody {
+    tr {
+      &:hover {
+        background-color: #ecc7d1 !important;
+      }
+    }
+  }
+
+}

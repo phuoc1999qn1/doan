@@ -1,0 +1,2082 @@
+<section class="body" *ngIf="isMobile">
+  <div class="banner padding-17">
+    <div class="banner-slick">
+      <div class="slick-item">
+        <a href="">
+          <img src="https://salt.tikicdn.com/cache/w824/ts/banner/09/f3/b5/3b13089498f2e753fd8e554678033443.jpg" alt="">
+        </a>
+      </div>
+      <div class="slick-item">
+        <a href="">
+          <img src="https://salt.tikicdn.com/cache/w824/ts/banner/5f/ee/97/31d611c454809d82a27946a23d315571.png" alt="">
+        </a>
+      </div>
+      <div class="slick-item">
+        <a href="">
+          <img src="https://salt.tikicdn.com/cache/w824/ts/banner/2d/1a/f7/1c9ca5e87cb5a7eb79171cf12b8c7267.jpg" alt="">
+        </a>
+      </div>
+      <div class="slick-item">
+        <a href="">
+          <img src="https://salt.tikicdn.com/cache/w824/ts/banner/23/6b/7f/00d156b831a5fee1384eb3e5820d19f3.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="product">
+    <!-- Sản phẩm giảm giá -->
+    <div class="product-sale">
+      <div class="product-title">
+        <h6>Khuyến mãi</h6>
+        <a href="">
+          Xem thêm
+        </a>
+      </div>
+      <div class="product-wrap">
+        <div class="product-wrap_item">
+          <a href="">
+            <div class="ps-img">
+              <img src="assets/img/products/product2.png" alt="">
+            </div>
+            <div class="ps-info">
+              <span>Tên sản phẩm</span>
+              <h6>
+                405,000₫
+                <small>795,000₫</small>
+              </h6>
+            </div>
+            <label class="discount">
+              -49%
+            </label>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Điện thoại - máy tính bảng -->
+    <div class="product-categories">
+      <div class="p-title">
+        <h5>Điện thoại - máy tính bảng</h5>
+      </div>
+      <div class="categories">
+        <div class="categories-img">
+          <img src="https://salt.tikicdn.com/cache/w885/ts/banner/e0/59/a2/630df4d276deffdc03ccf872e7f76965.jpg" alt="">
+        </div>
+        <div class="categories-name">
+          <ul class="categories-name_item">
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="separate">
+          <div class="line"></div>
+        </div>
+        <div class="categories-wrap product-group">
+          <div class="product-group_item" *ngFor="let p of productsPhone.data">
+            <a href="">
+              <div class="pc-img">
+                <img src="https://{{p.image}}" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  {{p.proName}}
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  {{p.price | number}}₫
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more-product">
+        <a href="">
+          <button class="btn btn-more">Xem thêm</button>
+        </a>
+      </div>
+    </div>
+    <!-- Điện tử điện lạnh -->
+    <div class="product-categories">
+      <div class="p-title">
+        <h5>Điện tử điện lạnh</h5>
+      </div>
+      <div class="categories">
+        <div class="categories-img">
+          <img src="assets/img/category/pill.jpg" alt="pill">
+        </div>
+        <div class="categories-name">
+          <ul class="categories-name_item">
+            <li>
+              <a href="">{{cateName.productName}}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="separate">
+          <div class="line"></div>
+        </div>
+        <div class="categories-wrap product-group">
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="https://{{p.image}}" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  {{p.proName}}
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  {{p.price | number}}₫
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more-product">
+        <a href="">
+          <button class="btn btn-more">Xem thêm</button>
+        </a>
+      </div>
+    </div>
+    <!-- Làm đẹp -->
+    <div class="product-categories">
+      <div class="p-title">
+        <h5>Làm đẹp</h5>
+      </div>
+      <div class="categories">
+        <div class="categories-img">
+          <img src="assets/img/category/cosmestic.jpg" alt="pill">
+        </div>
+        <div class="categories-name">
+          <ul class="categories-name_item justify-content-center">
+            <li>
+              <a href="">Chăm sóc da</a>
+            </li>
+            <li>
+              <a href="">Chăm sóc tóc</a>
+            </li>
+          </ul>
+        </div>
+        <div class="separate">
+          <div class="line"></div>
+        </div>
+        <div class="categories-wrap product-group">
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  Tên sản phẩm
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class=" product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class=" product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class=" product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class=" product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+          <div class=" product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product2.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more-product">
+        <a href="">
+          <button class="btn btn-more">Xem thêm</button>
+        </a>
+      </div>
+    </div>
+    <!-- Mẹ và bé -->
+    <div class="product-categories">
+      <div class="p-title">
+        <h5>Mẹ và bé</h5>
+      </div>
+      <div class="categories">
+        <div class="categories-img">
+          <img src="assets/img/category/mom.jpg" alt="pill">
+        </div>
+        <div class="categories-name">
+          <ul class="categories-name_item justify-content-center">
+            <li>
+              <a href="">Sản phẩm cho bé</a>
+            </li>
+          </ul>
+        </div>
+        <div class="separate">
+          <div class="line"></div>
+        </div>
+        <div class="categories-wrap product-group">
+          <div class="product-group_item">
+            <a href="">
+              <div class="pc-img">
+                <img src="assets/img/products/product3.png" alt="">
+              </div>
+              <div class="pc-info">
+                <p>
+                  HYDROLYZED COLLAGEN 1000MG
+                </p>
+                <div class="pc-quality">
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                  <i class="fi flaticon-star"></i>
+                </div>
+                <h6>
+                  405,000₫
+                </h6>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="more-product">
+        <a href="">
+          <button class="btn btn-more">Xem thêm</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section *ngIf="width > 1360" class="section menu">
+  <div class="padding-15">
+    <div class="sub-menu">
+      <ul class="menu-category">
+        <li class="menu-item">
+          <a [routerLink]="['/product-phone']">
+            <span class="menu-item-icon">
+              <i class="fi flaticon-phone-1"></i>
+            </span>
+            <span class="menu-item-text">Điện Thoại - Máy Tính Bảng</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Xu hướng</span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=1538">APPLE IPHONE 12 PRO 512GB GRAPHITE</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=1536">APPLE IPHONE 12 64GB BLUE</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=1537">APPLE IPHONE 12 PRO 256GB PACIFIC BLUE</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=16">Điện Thoại Samsung Galxy Note 10 Plus (256GB/12GB)</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=17">Điện Thoại Samsung Galaxy Note 20 (256GB/8GB)</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=31">Ðiện Thoại IPhone 11 Pro 256GB</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=36">Điện Thoại IPhone SE 64GB</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=45">Điện Thoại IPhone XS 256GB</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=46">Điện Thoại IPhone 11 Pro Max 512GB</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=57">IPad Pro 11 inch(2018) 256Gb WiFi</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=59">IPad Mini 5 WiFi 256GB</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=52">IPad Pro 11 inch (2020) WiFi</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="product-detail;id=66">Oppo A9 (8GB/128GB)</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">Nổi bật</span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Samsung Galaxy S20 Plus</a>
+                </span>
+                <span class="menu-detail-title">Smartphone chính hãng</span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title"><a href="#">Máy tính bảng</a> </span>
+                <span class="menu-detail-title"><a href="#">Phụ kiện điện thoại</a></span>
+                <span class="menu-detail-title"><a href="#">Máy đọc sách</a></span>
+                <span class="menu-detail-title pt-2">Dịch vụ, Chính sách</span>
+                <span class="menu-detail-item">
+                  <a href="#">Trung tâm bảo hành chính hãng</a>
+                  <a href="#">Hướng dẫn mua trả góp</a>
+                  <a href="#">Quy trình đóng gói, giao hàng</a>
+                  <a href="#">Quy trình đổi trả và bảo hành</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/18/12/a1/1e040f4531601ba0fe8756bde4048326.jpg"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a routerLink="product-electronic">
+            <span class="menu-item-icon">
+              <i class="fi flaticon-television"></i>
+            </span>
+            <span class="menu-item-text">Điện Tử - Điện Lạnh</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Ti vi</span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi bán chạy</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi mới 2019</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi cao cấp</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Smart Tivi - Android Tivi</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi bán chạy</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Internet Tivi</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi 4k</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi OLED</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tivi QLED</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  Âm thanh & Phụ kiện
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Máy lạnh - Máy điều hòa</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy lạnh bán chạy</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy lạnh mới 2019</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy lạnh Inverter</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Máy giặt</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy giặt bán chạy</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy giặt mới 2019</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Máy giặt Inverter</a>
+                </span>
+                <span class="menu-detail-title">
+                  <a href="#">Máy sấy quần áo</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Tủ lạnh</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tủ lạnh bán chạy</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tủ lạnh mới 2019</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Tủ lạnh Inverter</a>
+                </span>
+                <span class="menu-detail-title">
+                  <a href="#">Tủ đông - Tủ mát</a>
+                </span>
+                <span class="menu-detail-title">
+                  <a href="#">Máy nước nóng</a>
+                </span>
+                <span class="menu-detail-title">
+                  <a href="#">Máy rửa chén</a>
+                </span>
+                <span class="menu-detail-title">
+                  <a href="#">Tủ ướp rượu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  Dịch vụ và Bảo hành
+                </span>
+                <span class="menu-detail-item"><a href="#">Bảo hành - đổi trả</a> </span>
+                <span class="menu-detail-item"><a href="#">Lắp đặt tận nhà</a></span>
+                <span class="menu-detail-item"><a href="#">Mua trả góp 0%</a></span>
+                <span class="menu-detail-title pt-2">
+                  Chính hãng thương hiệu
+                </span>
+                <span class="menu-detail-item"><a href="#">Load dữ liệu</a></span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/91/00/21/8aadde21f6418fab04a05a97220e0c39.jpg"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-headphones"></i>
+            </span>
+            <span class="menu-item-text">Phụ kiện thiết bị số</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Thiết Bị Âm Thanh</span>
+
+                <span class="menu-detail-title">
+                  <a href="#">Tất Cả Tai Nghe</a>
+                </span>
+                <span class="menu-detail-item">Load dữ liệu</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Tất Cả Loa</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Đeo Thông Minh</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ Kiện Điện Thoại</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Game</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Thiết Bị Mạng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thương Hiệu Nổi Bật</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/91/00/21/8aadde21f6418fab04a05a97220e0c39.jpg"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-laptop"></i>
+            </span>
+            <span class="menu-item-text">Laptop - Thiết bị IT</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-camera"></i>
+            </span>
+            <span class="menu-item-text">Máy Ảnh - Quay Phim</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-washing-machine"></i>
+            </span>
+            <span class="menu-item-text">Điện Gia Dụng</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-frying-pan"></i>
+            </span>
+            <span class="menu-item-text">Nhà cửa đời sống</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-sprayer"></i>
+            </span>
+            <span class="menu-item-text">Hàng Tiêu Dùng - Thực Phẩm</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-feeding-bottle"></i>
+            </span>
+            <span class="menu-item-text">Đồ Chơi, Mẹ & Bé</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-lipstick"></i>
+            </span>
+            <span class="menu-item-text">Làm Đẹp - Sức Khỏe</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-shirt"></i>
+            </span>
+            <span class="menu-item-text">Thời trang - Phụ kiện</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-basketball-ball"></i>
+            </span>
+            <span class="menu-item-text">Thể Thao - Dã Ngoại</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-motorcycle"></i>
+            </span>
+            <span class="menu-item-text">Xe Máy, Ô tô, Xe Đạp</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-earth-grid"></i>
+            </span>
+            <span class="menu-item-text">Hàng Quốc Tế</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-book"></i>
+            </span>
+            <span class="menu-item-text">Sách, VPP & Quà Tặng </span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item">
+          <a href="#">
+            <span class="menu-item-icon">
+              <i class="flaticon-voucher"></i>
+            </span>
+            <span class="menu-item-text">Voucher - Dịch Vụ - Thẻ Cào</span>
+          </a>
+          <div class="menu-detail">
+            <ul>
+              <li class="d-flex flex-column ">
+                <span class="menu-detail-title">Dịch Vụ Và Bảo Hành</span>
+                <span class="menu-detail-item">Trả góp 0%</span>
+                <span class="menu-detail-item">Chính Hãng 100%</span>
+                <span class="menu-detail-item">Bão hành tận nhà</span>
+                <span class="menu-detail-item">Đổi trả tận nhà</span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">LapTop Theo Giá</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Dưới 8 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 8 - 10 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 10 - 15 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Từ 15 - 20 triệu</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Trên 20 triệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Laptop Theo Core</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i3</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i5</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i7</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Intel Core i9</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Laptop Chính hãng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+                <span class="menu-detail-title pt-2">
+                  <a href="#">Thiết Bị Văn Phòng</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+
+              <li class="d-flex flex-column">
+                <span class="menu-detail-title">
+                  <a href="#">Phụ kiện, Linh kiện máy tính</a>
+                </span>
+                <span class="menu-detail-item">
+                  <a href="#">Load dữ liệu</a>
+                </span>
+              </li>
+              <li class="d-flex flex-column mr-5">
+                <a href="#">
+                  <img src="https://salt.tikicdn.com/ts/banner/0a/fe/53/3189cb9fa97600ac29bede4eaca3730f.png"
+                    style="width: 100%" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="menu-banner">
+        <div class="menu-banner-body">
+          <a class="slick-btn slick-btn-prev" (mouseenter)="checkHover = !checkHover"
+            (mouseleave)="checkHover = !checkHover" [class.active]="!checkHover">
+            <i class="fi flaticon-left-chevron"></i>
+          </a>
+          <a class="slick-btn slick-btn-next" (mouseenter)="checkHover = !checkHover"
+            (mouseleave)="checkHover = !checkHover" [class.active]="!checkHover">
+            <i class="fi flaticon-right"></i>
+          </a>
+          <div class="menu-banner-slick" (mouseenter)="checkHover = !checkHover"
+            (mouseleave)="checkHover = !checkHover">
+            <div class="menu-banner-left">
+              <a href="#">
+                <img src="https://salt.tikicdn.com/cache/w584/ts/banner/9b/74/43/e443fe2296ef47e8908532b7a555d567.jpg"
+                  alt="">
+              </a>
+            </div>
+            <div class="menu-banner-left">
+              <a href="#">
+                <img src="https://salt.tikicdn.com/cache/w584/ts/banner/c0/f5/1a/d8979d76639d8132f1675e5a1a527314.png"
+                  alt="">
+              </a>
+
+            </div>
+            <div class="menu-banner-left">
+              <a href="#">
+                <img src="https://salt.tikicdn.com/cache/w584/ts/banner/46/54/aa/875ba0ce28e646b8054f466f8a199d68.jpg"
+                  alt="">
+              </a>
+            </div>
+          </div>
+          <div class="menu-banner-right">
+            <img src="https://salt.tikicdn.com/cache/w206/ts/banner/c6/f8/48/44c380b52d8f5491017b4506b111ba9d.png"
+              alt="">
+            <img src="https://salt.tikicdn.com/cache/w206/ts/banner/65/0c/62/14fb8b63cfb5de38d75457e8bfb0c124.png"
+              alt="">
+            <img src="https://salt.tikicdn.com/cache/w206/ts/banner/5b/45/9e/c1a2b0fa09703a9d852a782b832c7e65.png"
+              alt="">
+            <img src="https://salt.tikicdn.com/cache/w206/ts/banner/e1/e7/11/ef38be0b711ddb053642029c47500522.png"
+              alt="">
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="menu-banner-footer">
+          <img src="https://salt.tikicdn.com/cache/w292/ts/banner/ae/ab/dd/321f0aacc051df326a4126cee2b12390.png"
+            class="img-fluid" alt="">
+          <img src="https://salt.tikicdn.com/cache/w292/ts/banner/a3/4b/35/b3384e2aa3a5a612277c71a792f8338e.png"
+            class="img-fluid" alt="">
+          <img src="https://salt.tikicdn.com/cache/w206/ts/banner/ac/e6/58/bbd9c7471f9dd564e7a13234a1da764b.png"
+            class="img-fluid" alt="">
+          <img src="https://salt.tikicdn.com/cache/w206/ts/banner/4e/8d/85/309cb988a6a1ced7e9e90254898be8be.png"
+            class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section *ngIf="width > 1360" class="homepage">
+  <div class="padding-15">
+    <div class="homepage-option d-flex justify-content-between">
+
+      <a href="">
+        <img src="https://salt.tikicdn.com/cache/w295/ts/banner/71/c5/1d/70b465713dde5dec678c741544e48890.png"
+          alt="https://tiki.vn/chuong-trinh/mo-the-tikicard">
+      </a>
+      <a href="">
+        <img src="https://salt.tikicdn.com/cache/w295/ts/banner/0d/59/da/7d6d74df366e6a875bb104363304ed14.png"
+          alt="https://tiki.vn/chuong-trinh/mo-the-tikicard">
+      </a>
+      <a href="">
+        <img src="https://salt.tikicdn.com/cache/w295/ts/banner/d1/fa/ac/77eeb118b9d7d435ed2eb13b79e147de.png"
+          alt="https://tiki.vn/chuong-trinh/mo-the-tikicard">
+      </a>
+      <a href="">
+        <img src="https://salt.tikicdn.com/cache/w295/ts/banner/ab/bc/dc/713112a2e91453c88d5f6e6e5929780a.png"
+          alt="https://tiki.vn/chuong-trinh/mo-the-tikicard">
+      </a>
+    </div>
+    <div class="homepage-proSale">
+      <div class="homepage-proSale_header">
+        <div>
+          <img src="https://frontend.tikicdn.com/_desktop-next/static/img/giasoc.svg" alt="flash deal">
+          <img src="https://frontend.tikicdn.com/_desktop-next/static/img/flash.gif" alt="flash deal">
+          <img src="https://frontend.tikicdn.com/_desktop-next/static/img/homnay.svg" alt="flash deal">
+        </div>
+      </div>
+
+      <div class="homepage-proSale_body" *ngIf="allProduct[0] && allProduct[1] && allProduct[2] && allProduct[3] && allProduct[4]">
+        <div class="homepage-proSale_body-item">
+          <a class="product-hover" href="">
+            <div class="product-img">
+              <img src="https://{{allProduct[0].image}}">
+            </div>
+            <p class="title">{{allProduct[0].proName}}</p>
+            <p class="price">
+              {{allProduct[0].price | number}} ₫
+              <span class="percent">-31%</span>
+              <!-- <span class="original">3.690.000 ₫</span> -->
+            </p>
+          </a>
+        </div>
+        <div class="homepage-proSale_body-item">
+          <a class="product-hover" href="">
+            <div class="product-img">
+              <img src="https://{{allProduct[1].image}}">
+            </div>
+            <p class="title">{{allProduct[1].proName}}</p>
+            <p class="price">
+              {{allProduct[1].price | number}} ₫
+              <span class="percent">-25%</span>
+              <!-- <span class="original">3.690.000 ₫</span> -->
+            </p>
+          </a>
+        </div>
+        <div class="homepage-proSale_body-item">
+          <a class="product-hover" href="">
+            <div class="product-img">
+              <img src="https://{{allProduct[2].image}}">
+            </div>
+            <p class="title">{{allProduct[2].proName}}</p>
+            <p class="price">
+              {{allProduct[2].price | number}} ₫
+              <span class="percent">-11%</span>
+              <!-- <span class="original">3.690.000 ₫</span> -->
+            </p>
+          </a>
+        </div>
+        <div class="homepage-proSale_body-item">
+          <a class="product-hover" href="">
+            <div class="product-img">
+              <img src="https://{{allProduct[3].image}}">
+            </div>
+            <p class="title">{{allProduct[3].proName}}</p>
+            <p class="price">
+              {{allProduct[3].price | number}} ₫
+              <span class="percent">-41%</span>
+              <!-- <span class="original">3.690.000 ₫</span> -->
+            </p>
+          </a>
+        </div>
+        <div class="homepage-proSale_body-item">
+          <a class="product-hover" href="">
+            <div class="product-img">
+              <img src="https://{{allProduct[4].image}}">
+            </div>
+            <p class="title">{{allProduct[4].proName}}</p>
+            <p class="price">
+              {{allProduct[4].price | number}} ₫
+              <span class="percent">-31%</span>
+              <!-- <span class="original">3.690.000 ₫</span> -->
+            </p>
+          </a>
+        </div>
+      </div>
+      
+      <div class="homepage-proSale_footer">
+        <a href="#">Xem thêm</a>
+      </div>
+    </div>
+    <div class="homepage-categories homepage-group">
+      <h6>NGÀNH HÀNG QUAN TÂM</h6>
+      <span class="prev arrow-left">
+        <i class="fi flaticon-left-chevron"></i>
+      </span>
+      <div class="slider-list">
+        <div class="categories" *ngFor="let c of categories">
+          <a class="categories-item"
+            href="https://tiki.vn/dien-thoai-may-tinh-bang/c1789?src=home_interesting_categories">
+            <div class="image">
+              <img src="{{c.image}}" alt="Điện Thoại - Máy Tính Bảng" class="LazyLoadImage__Wrapper-sc-12s4rj6-0 dqgcDn"
+                style="opacity: 1;">
+            </div>
+            <p>{{c.name}}</p>
+          </a>
+        </div>
+      </div>
+      <span class="next arrow-right">
+        <i class="fi flaticon-right"></i>
+      </span>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-form pt-0">
+  <div class="padding-15">
+    <div class="container-fluid p-0">
+      <div class="title">
+        <h1>Liên <span>hệ</span></h1>
+        <p>
+          Đăng ký thông tin liên hệ để được cập nhật 
+          nhanh những khuyến mãi hot 
+        </p>
+      </div>
+      <div class="contact-form_input">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <input [ngClass]="{'is-null' : !contactFlag, 'not-null' : contactFlag}" class="form-ctrl" type="text" required [(ngModel)]="contact.fullName" maxlength="50" placeholder="Họ và tên">
+              <span class="focus-border"></span>
+              <small class="validate" *ngIf="!contactFlag">Vui lòng nhập tên!!!</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <input [ngClass]="{'is-null' : !contactFlag, 'not-null' : contactFlag}" class="form-ctrl" type="email" [(ngModel)]="contact.email" maxlength="50" placeholder="Email">
+              <span class="focus-border"></span>
+              <small class="validate" *ngIf="!contactFlag">Vui lòng nhập email!!!</small>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <input [ngClass]="{'is-null' : !contactFlag, 'not-null' : contactFlag}" class="form-ctrl" type="text" [(ngModel)]="contact.phoneNumber" maxlength="10" placeholder="Số điện thoại">
+              <span class="focus-border"></span>
+              <small class="validate" *ngIf="!contactFlag">Vui lòng nhập số điện thoại!!!</small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <textarea class="form-ctrl" name="Lời nhắn" [(ngModel)]="contact.message" maxlength="200" rows="4" placeholder="Lời nhắn"></textarea>
+              <span class="focus-border"></span>
+            </div>
+          </div>
+        </div>
+        <div class="submit">
+          <button class="btn btn-send" (click)="addContact()">Gửi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

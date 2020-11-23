@@ -1,0 +1,42 @@
+footer {
+  padding-top: 36px;
+  background-color: white;
+  h4 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0px 0px 17px;
+  }
+  a:hover {
+    opacity: 0.95;
+  }
+
+  .small-text {
+    display: block;
+    margin-bottom: 11px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+  }
+  .security {
+    margin-bottom: 10px;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+    font-weight: 400; 
+  }
+  .icon{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    vertical-align: middle;
+  }
+  .hotline{
+    margin-bottom: 10px;
+    color: rgb(196, 1, 26);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    a {
+      color: rgb(196, 1, 26);
+    }
+  }
+}

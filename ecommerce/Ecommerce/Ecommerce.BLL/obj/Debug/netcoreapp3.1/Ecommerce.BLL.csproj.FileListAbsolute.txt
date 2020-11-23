@@ -1,0 +1,34 @@
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.deps.json
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.runtimeconfig.json
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.runtimeconfig.dev.json
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.DAL.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.Common.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.DAL.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csprojAssemblyReference.cache
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.AssemblyInfoInputs.cache
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.AssemblyInfo.cs
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csproj.CoreCompileInputs.cache
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csproj.CopyComplete
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.genruntimeconfig.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.deps.json
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.runtimeconfig.json
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.runtimeconfig.dev.json
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.BLL.pdb
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.DAL.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.Common.pdb
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\netcoreapp3.1\Ecommerce.DAL.pdb
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csprojAssemblyReference.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.AssemblyInfoInputs.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.AssemblyInfo.cs
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csproj.CoreCompileInputs.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.csproj.CopyComplete
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.pdb
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\netcoreapp3.1\Ecommerce.BLL.genruntimeconfig.cache

@@ -1,0 +1,403 @@
+<section class="product-detail">
+  <div class="header">
+    <div class="padding-15">
+      <div class="breadcrumb">
+        <a href="" class="breadcrumb-items">Trang chủ</a>
+        <a href="" class="breadcrumb-items">Điện Thoại - Máy tính bảng </a>
+        <a href="" class="breadcrumb-items" *ngFor="let l of listProduct">{{l.productName}}</a>
+        <a href="" class="breadcrumb-items">
+          <span>{{products.proName}}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="padding-15">
+      <div class="product-wrap">
+        <div class="row no-gutters">
+          <div class="col-5">
+            <div class="product-img">
+              <div class="row">
+                <div class="col-2">
+                  <a href="">
+                    <div class="product-img_items">
+                      <img
+                        src="https://{{products.image}}"
+                        alt="">
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="product-img_items">
+                      <img
+                        src="https://{{products.image}}"
+                        alt="">
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="product-img_items">
+                      <img
+                        src="https://{{products.image}}"
+                        alt="">
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="product-img_items">
+                      <img
+                        src="https://{{products.image}}"
+                        alt="">
+                    </div>
+                  </a>
+                </div>
+                <div class="col-8">
+                  <div class="product-img_main">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w390/ts/product/a2/0e/21/8370177bf6874a6a3f219a825980c3c2.jpg"
+                      src="https://{{products.image}}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <div class="product-content-header">
+              <h1 class="title">
+                <div class="logo-title">
+                  <img src="https://salt.tikicdn.com/ts/upload/e9/68/49/50ac83c9f95bd008cc840e638f0f5791.png" alt="">
+                </div>
+                {{products.proName}}
+              </h1>
+
+              <!-- rankking -->
+              <!-- <div class="best-seller">
+                <i></i>
+                <p>
+                  <span>Đứng thứ 46</span>
+                  trong
+                  <a href="">
+                    Top 100 điện thoại Smartphone bán chạy tuần này
+                  </a>
+                </p>
+              </div>
+              <div class="product-brand">
+                <h6>
+                  <span>Thương hiệu: </span>
+                  <a href="">Samsung</a>
+                </h6>
+                <h6>SKU: 7710273186938</h6>
+              </div> -->
+              <!-- <div class="product-content-header">
+                  
+                </div> -->
+            </div>
+            <div class="product-content-body">
+              <div class="left">
+                <div class="free-shipping">
+                  <div class="free-shipping-icon">
+                    <img src="https://salt.tikicdn.com/ts/upload/cd/74/0a/862aa1925b1d4c8b837c544e40e5d4cb.png"
+                      alt="free shipping">
+                  </div>
+                  <div class="free-shipping-content">
+                    <span>
+                      <strong>Miễn phí giao tiêu chuẩn (tối đa 100k)</strong>
+                      cho đơn hàng từ 999k
+                    </span>
+                    <a href="">
+                      Xem chi tiết
+                    </a>
+                  </div>
+                </div>
+                <div class="price-group">
+                  <div class="price">
+                    <span>{{products.price | number }}₫</span>
+                  </div>
+                  <div class="installment">
+                    <p>Trả góp 0% chỉ
+                      <span>4.831.666 ₫/tháng</span>
+                      trong 6 tháng qua thẻ tín dụng
+                    </p>
+
+                    <div class="extra-info">
+                      <a href="">(?)</a>
+                      <div class="content">
+                        <p>Trả góp lãi suất 0% qua thẻ tín dụng của HSBC, Sacombank, Citibank, Shinhan Bank, TPBank,
+                          Standard Chartered, VIB, OCB và SCB -<a href="https://tiki.vn/chuong-trinh/tra-gop"
+                            title="Mua trả góp 0% qua thẻ" target="_blank">Chi tiết</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="save-info">
+                    Tiết kiệm:
+                    <span>3%</span>
+                    (1.000.000 ₫)
+                  </p>
+                  <p class="original-price">
+                    Giá thị trường: 29.990.000 ₫
+                  </p>
+                </div>
+                <div class="product-description group border-top d-none">
+                  <ul class="list">
+                    <li>Hàng chính hãng Samsung Việt Nam</li>
+                    <li>Nguyên seal, Mới 100%, Chưa Active</li>
+                    <li>Màn hình: Dynamic AMOLED 6.9 inch</li>
+                    <li>Độ phân giải: 3200x1440 pixel</li>
+                    <li>Hệ điều hành: Android</li>
+                    <li>CPU: Exynos 990 8 nhân (2 nhân 2.73 GHz, 2 nhân 2.5 GHz & 4 nhân 2.0 Ghz)</li>
+                    <li>Camera sau: 108 MP + 12 MP + 12 MP</li>
+                    <li>Camera trước: 10 MP</li>
+                    <li>RAM: 8 GB</li>
+                    <li>Bộ nhớ trong: 256 GB</li>
+                    <li>Thẻ SIM: 2 Nano SIM</li>
+                    <li>Dung lượng pin: 4500mAh</li>
+                    <li>Bảo mật nâng cao: Mở khoá khuôn mặt, Mở khoá vân tay dưới màn hình</li>
+                    <li>
+                      Tính năng đặc biệt: Samsung Pay,
+                      Trợ lý ảo Samsung Bixby,
+                      Màn hình luôn hiển thị AOD,
+                      Dolby Audio, Âm thanh AKG,
+                      Chặn tin nhắn, Chuẩn Kháng nước,
+                      Chuẩn kháng bụi, Đèn pin, Chặn cuộc gọi,
+                      Samsung DeX
+                    </li>
+                  </ul>
+                </div>
+                <div class="group border-top">
+                  <div class="product-gift d-none">
+                    <p>
+                      2 quà tặng từ
+                      <a href="">
+                        Tiki Trading
+                      </a>
+                    </p>
+                    <div class="product-gift_item d-none">
+                      <div class="item">
+                        <p class="name">
+                          Bao Da Clear View Cover Samsung Galaxy Note 20 Ultra
+                          - Hàng Chính Hãng - Flip Cover
+                        </p>
+                        <a class="image"
+                          routerLink="https://tiki.vn/bao-da-clear-view-cover-samsung-galaxy-note-20-ultra-hang-chinh-hang-p59029708.html">
+                          <img
+                            src="https://salt.tikicdn.com/cache/100x100/ts/product/7f/c2/fc/41765f9543cf0815d7457e34de056a09.jpg">
+                        </a>
+                        <p class="item-price">1.500.000 ₫</p>
+                      </div>
+
+                      <div class="item">
+                        <p class="name">
+                          Tai Nghe Bluetooth True Wireless Samsung Galaxy Buds Live
+                          - Hàng Chính Hãng - Đồng
+                        </p>
+                        <a class="image"
+                          routerLink="https://tiki.vn/tai-nghe-bluetooth-true-wireless-samsung-galaxy-buds-bean-hang-chinh-hang-p59050694.html">
+                          <img
+                            src="https://salt.tikicdn.com/cache/100x100/media/catalog/producttmp/1a/4c/5c/c9cf77710c5b5c86f20a8f1b271f6094.jpg">
+                        </a>
+                        <p class="item-price">3.490.000 ₫</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="color-option d-none">
+                    <p class="option-name">Chọn màu:
+                      <span>Đen</span>
+                    </p>
+                    <div class="color">
+                      <a class="btn-option">Trắng</a>
+                      <a class="btn-option active">Đen</a>
+                      <a class="btn-option">Đồng</a>
+                    </div>
+                  </div>
+                  <div class="units-in-stock">
+                    <h6>Sản phẩm có sẵn:</h6>
+                    <span style="font-size: .8rem;">{{products.unitsInStock}} sản phẩm có sẵn</span>
+                  </div>
+                  <div class="add-to-cart">
+                    <div class="add-to-cart_quantity">
+                      <p class="label">Số lượng:</p>
+                      <div class="group-input">
+                        <button *ngIf=" proQuanity >= 2" (click)="proQuanity = proQuanity - 1">-</button>
+                        <button *ngIf=" proQuanity == 1" disabled (click)="proQuanity = proQuanity - 1">-</button>
+                        <input type="text" class="input" value="{{proQuanity}}">
+                        <button *ngIf="proQuanity < products.unitsInStock" (click)="proQuanity = proQuanity + 1">+</button>
+                        <button *ngIf="proQuanity === products.unitsInStock" disabled>+</button>
+                      </div>
+                    </div>
+                    <div class="add-to-cart_btn">
+                      <button (click)="addToCart()" class="btn btn-add-to-cart">
+                        <i class="fi flaticon-cart"></i>
+                        Chọn mua
+                      </button>
+                      <button class="btn btn-add-to-cart installment-payment">
+                        TRẢ GÓP QUA THẺ TÍN DỤNG
+                        <span>
+                          Chỉ từ 4.831.666 ₫/tháng
+                        </span>
+                      </button>
+                    </div>
+                    <div class="add-to-cart_favorite"></div>
+                  </div>
+                </div>
+
+                <div class="delivery-info border-top">
+                  <div class="delivery-info_title d-none">
+                    Thông tin giao hàng dự kiến
+                  </div>
+                  <div class="delivery-info_picker d-none">
+                    Giao hàng tới Phường 03, Quận Bình Thạnh, Hồ Chí Minh -
+                    <b>Đổi địa chỉ</b>
+                  </div>
+                  <div class="delivery-info_seller d-none">
+                    <span>Nhà bán Tiki Trading</span>
+                    <div class="delivery-info_option">
+                      <div class="delivery-info_option-item">
+                        <div class="delivery-time">Giao vào Thứ 3, ngày 01 tháng 09</div>
+                        <div class="delivery-wrap">
+                          <a href="">
+                            <img src="https://salt.tikicdn.com/ts/upload/72/5e/10/8c1938c984cbd6cf2b73731d94ff01bf.png"
+                              alt="tikinow">
+                          </a>
+                          <span class="delivery-text">
+                            Giao Trong Ngày
+                          </span>
+                        </div>
+                        <div class="delivery-fee">
+                          Vận chuyển:
+                          <span>29.000 ₫</span>
+                        </div>
+                      </div>
+                      <div class="delivery-info_option-item">
+                        <div class="delivery-time">Giao vào Thứ 3, ngày 01 tháng 09</div>
+                        <div class="delivery-wrap">
+                          <span class="delivery-text">
+                            Giao hàng tiêu chuẩn
+                          </span>
+                        </div>
+                        <div class="delivery-fee">
+                          Vận chuyển:
+                          <span>29.000 ₫</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="group border-top d-none">
+                    <div class="product-extra">
+                      <h2>Thường được mua cùng</h2>
+                      <div class="images">
+                        <div class="images-item">
+                          <a href="" title="Điện Thoại Samsung Galaxy Note 20 Ultra (256GB/8GB) - Hàng Chính Hãng">
+                            <img
+                              src="https://salt.tikicdn.com/cache/280x280/ts/product/a2/0e/21/8370177bf6874a6a3f219a825980c3c2.jpg"
+                              alt="Điện Thoại Samsung Galaxy Note 20 Ultra (256GB/8GB) - Hàng Chính Hãng">
+                          </a>
+                        </div>
+                        <div class="images-item">
+                          <a href="" title="Điện Thoại Samsung Galaxy Note 20 Ultra (256GB/8GB) - Hàng Chính Hãng">
+                            <img
+                              src="https://salt.tikicdn.com/cache/280x280/ts/product/93/95/f9/978db60e03a35b332adfba516d9402fb.jpg"
+                              alt="Ốp lưng cho Samsung Galaxy A11 chất liệu silicon dẻo màu đen chống sốc">
+                          </a>
+                        </div>
+                        <div class="total">
+                          <p class="frequently-sum-price">Tổng tiền:
+                            <span>29.026.000 ₫</span>
+                          </p>
+                          <button class="btn frequently-button">Thêm 2 sp vào giỏ hàng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-report">
+                    <span>Phản ánh thông tin sản phẩm không chính xác.</span>
+                  </div>
+
+                </div>
+              </div>
+              <div class="right">
+                <div class="shop-info">
+                  <div class="tiki-trading">
+                    <div class="seller-info">
+                      <i class="fi flaticon-shop"></i>
+                      <div>
+                        <a href="https://tiki.vn/cua-hang/tiki-trading" class="seller-name">Musa Trading</a>
+                        <p class="seller-description">Cam kết chính hiệu 100%</p>
+                      </div>
+                    </div>
+                    <a href="https://tiki.vn/cua-hang/tiki-trading" class="btn-view-shop">Xem shop</a>
+                    <div class="seller-specification">
+                      <i class="fi flaticon-return-of-investment"></i>
+                      <div class="text">
+                        <span>Tiki hoàn tiền 111% </span>
+                        <div>Nếu phát hiện hàng giả</div>
+                        <!-- <div class="tooltip">
+                            <i class="tikicon icon-info-grey" style="margin-right:0"></i>
+                            <p class="view">Chính sách bồi thường -<a target="_blank"
+                                href="https://drive.google.com/file/d/1po3r6qApp-q7JDB5kwGKujVtvInfO-ih/view?usp=sharing">
+                                Xem thêm</a>
+                            </p>
+                          </div> -->
+                      </div>
+                    </div>
+                    <div class="waranty-title">
+                      <i class="fi flaticon-shield"></i>
+                      <span>Thông tin bảo hành</span>
+                    </div>
+                    <div class="waranty-info">
+                      <div class="waranty-info_item">
+                        <span>Thời gian bảo hành</span>
+                        <strong>12 tháng</strong>
+                      </div>
+                      <div class="waranty-info_item">
+                        <span>Hình thức bảo hành</span>
+                        <strong>Điện tử</strong>
+                      </div>
+                      <div class="waranty-info_item">
+                        <span>Nơi bảo hành</span>
+                        <strong>Bảo hành chính hãng</strong>
+                      </div>
+                      <div class="waranty-info_item">
+                        <span>Hướng dẫn bảo hành</span>
+                        <a href="">Xem chi tiết</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="related-product">
+        <h5>SẢN PHẨM THƯỜNG ĐƯỢC XEM CÙNG</h5>
+        <div class="slick-track">
+          <span class="prev arrow-left">
+            <i class="fi flaticon-left-chevron"></i>
+          </span>
+          <div class="slider-list">
+            <div class="slider-list_item" *ngFor="let rp of relatedProduct.data">
+              <a class="product-hover" href="">
+                <div class="product-img">
+                  <img
+                    src="https://{{rp.image}}"
+                    alt="{{rp.proName}}">
+                </div>
+                <p class="title">{{rp.proName}}</p>
+                <p class="price">
+                  {{rp.price | number}}₫
+                  <span class="percent">-31%</span>
+                  <span class="original">3.690.000 ₫</span>
+                </p>
+              </a>
+            </div>
+          </div>
+          <span class="next arrow-right">
+            <i class="fi flaticon-right"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

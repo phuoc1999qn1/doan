@@ -1,0 +1,124 @@
+<section *ngIf="cartItem.length > 0" class="cart">
+  <div class="padding-15">
+    <div class="row">
+      <div class="col-12">
+        <div class="cart-products">
+          <h2 class="cart-products__title">
+            Giỏ hàng
+            <span class="cart-products__count">( {{cartItem.length}} sản phẩm)</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-9 pr-3">
+        <div class="cart-inner cart-products">
+          <div class="cart-products-inner">
+            <div class="cart-products-inner__group">
+              <a href="https://tiki.vn/cua-hang/tiki-trading" target="_blank" class="cart-products-inner__group-name">
+                <span>Tiki Trading</span>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="20"
+                  color="#787878" height="20" width="20" xmlns="http://www.w3.org/2000/svg"
+                  style="color: rgb(120, 120, 120);">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                </svg>
+              </a>
+              <ul class="cart-products-inner__products">
+                <li *ngFor="let c of cartItem; index as idx" class="product-item">
+                  <div class="product-item__wrap">
+                    <div class="product-item__wrap-img">
+                      <a [routerLink]="['/product-detail', {id:c.id}]" >
+                        <img src="https://{{c.img}}"/>
+                      </a>
+                    </div>
+                    <div class="product-item__wrap-content">
+                      <div class="product-info">
+                        <div class="product-info_wrap">
+                          <a class="product-info_wrap-name" href="product-detail;id={{c.id}}"> 
+                            {{c.name}}
+                          </a>
+                          <p class="product-info_wrap-badge"></p>
+                          <p class="product-info_wrap-action">
+                            <span class="product-delete" (click)="removeCartItem(idx)">Xóa</span>
+                            <span class="product-buy-later">Để dành mua sau</span>
+                          </p>
+                        </div>
+                        <div class="product-info_details">
+                          <div class="product-info_details-prices">
+                            <p class="real-prices">{{c.price | number}}đ</p>
+                            <p class="discount-prices">
+                              <del>{{c.price *110/100 | number}}</del>
+                              <span class="percent-prices"> -10% </span>
+                            </p>
+                          </div>
+                          <div class="product-info_details-qty">
+                            <div class="qty">
+                              <button class="qty-decrease qty-button" *ngIf=" c.qty >= 2" (click)="c.qty = c.qty - 1" (click)="addCartItem(idx)">-</button>
+                              <button class="qty-decrease qty-button" disabled *ngIf="c.qty == 1">-</button>
+                              <input type="tel" class="qty-input" value="{{c.qty}}" >
+                              <button class="qty-increase qty-button" (click)="c.qty = c.qty + 1" (click)="addCartItem(idx)">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="cart-payment">
+          <div class="promotion">
+            <div class="promotion-title">
+              <h6>
+                Mã Khuyến Mãi
+              </h6>
+              <span>Có thể chọn 2</span>
+            </div>
+            <div class="promotion-input">
+              <img src="https://frontend.tikicdn.com/_desktop-next/static/img/mycoupon/coupon_icon.svg">
+              Chọn hoặc nhập Khuyến mãi
+            </div>
+          </div>
+          <div class="total">
+            <div class="total-origin">
+              <h6>Tạm tính</h6>
+              <span>{{totalPrice | number}} đ</span>
+            </div>
+            <div class="total-pay">
+              <h6>Thành tiền</h6>
+              <span>
+                {{totalPrice | number}} đ
+                <i>(Đã bao gồm VAT nếu có)</i>
+              </span>
+            </div>
+          </div>
+          <button class="btn btn-order" (click)="order()">Tiến hành đặt hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<section class="cart-empty" *ngIf="cartItem.length === 0">
+  <div class="padding-15">
+    <div class="message">
+      <span>Giỏ hàng không có sản phẩm. Vui lòng thực hiện lại.</span>
+    </div>
+    <div class="cart-wrap">
+      <div class="title">Giỏ hàng
+        <span>(0 sản phẩm)</span>
+      </div>
+      <div class="cart-content">
+        <img class="cart-content_image" src="assets/images/empty-cart.png" alt="empty">
+        <p>Không có sản phẩm nào trong giỏ hàng của bạn.</p>
+        <a class="cart-content_continue" href="">
+          Tiếp tục mua sắm
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,457 @@
+<header *ngIf="width >= 1360" class="header">
+  <div class="header-banner">
+    <a href="https://tiki.vn/chuong-trinh/hoi-sach-online?src=topbar.b49786">
+      <div class="banner-image">
+      </div>
+    </a>
+  </div>
+  <div class="bg-main">
+    <div class="padding-15">
+      <div class="header-menu">
+        <!-- Image and text -->
+        <nav class="navbar d-flex justify-content-between">
+          <a class="navbar-brand" [routerLink]="['/']">
+            <img src="assets/images/logo/musa_logo.png" alt="">
+          </a>
+          <div class="form-search">
+            <input [(ngModel)]="keywords" (keyup.enter)="searchProduct()" class="form-control" type="search" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..."
+              aria-label="Search">
+            <button class="btn btn-search" type="submit">
+              <!-- product-phone-classify;proId={{n.productId}} -->
+              <a class="" href="search;keywords={{keywords}}">
+                <i class="fi flaticon-loupe"></i>
+                Tìm kiếm
+              </a>
+            </button>
+          </div>
+          <a class="navbar-items" routerLink="">
+            <i class="fi flaticon-packaging"></i>
+            <span>
+              Theo dõi
+              <br>
+              đơn hàng
+            </span>
+          </a>
+          <a class="navbar-items" routerLink="">
+            <i class="fi flaticon-notification"></i>
+            <span>
+              Thông báo
+              <br>
+              của tôi
+            </span>
+          </a>
+          <div class="navbar-items navbar-items-login">
+            <i class="fi flaticon-user"></i>
+            <span>
+              <span *ngIf="!users">Đăng Nhập</span>
+              <span *ngIf="users">
+                <span class="login-name"> Chào {{users[0].fullName}} </span>
+              </span>
+              <br>
+              <span style="font-weight:300;">
+                Tài khoản
+              </span>
+            </span>
+            <div class="navbar-items-dropdown" [class.d-none]="!checkLogin">
+              <button class="navbar-items-dropdown-btn" (click)="modalLogin()">Đăng nhập</button>
+              <button class="navbar-items-dropdown-btn" (click)="modalRegistor()">Tạo tài khoản</button>
+              <button class="navbar-items-dropdown-btn d-none" style="background:rgb(223, 74, 50);color: white;">
+                <span>
+                  <i class="fi flaticon-google-plus"></i>
+                </span>
+                Đăng nhập bằng Google
+              </button>
+            </div>
+            <div class="navbar-items-dropdown" [class.d-none]="checkLogin">
+              <a routerLink="/customer/order">
+                <p>Đơn hàng của tôi</p>
+              </a>
+              <a routerLink="/customer/account">
+                <p>Tài khoản của tôi</p>
+              </a>
+              <a href="" class="d-none">
+                <p>Nhận xét sản phẩm đã mua</p>
+              </a>
+              <a (click)="logout()">
+                <p>Thoát tài khoản</p>
+              </a>
+            </div>
+          </div>
+
+          <a class="navbar-items" [routerLink]="['/cart']">
+            <i class="fi flaticon-cart"></i>
+            <span>
+              Giỏ hàng
+            </span>
+            <span class="navbar-items-cart"> {{proCart.length}} </span>
+          </a>
+        </nav>
+
+        <div class="header-menu-option d-flex justify-content-between">
+          <div class="menu-function">
+            <div class="menu-list menu-function_items">
+              <i class="fi flaticon-menu"></i>
+              <span>DANH MỤC SẢN PHẨM</span>
+            </div>
+            <div class="ship-address menu-function_items">
+              <i class="fi flaticon-pin"></i>
+              <span>Phường 03, Quận Bình Thạnh, Hồ Chí Minh</span>
+            </div>
+            <div class="seen-pro menu-function_items">
+              <i class="fi flaticon-down-chevron"></i>
+              <span>SẢN PHẨM <br> BẠN ĐÃ XEM</span>
+            </div>
+          </div>
+
+          <div class="menu-services">
+            <a class="menu-services_items tiki-icon" routerLink="">
+              <img src="assets/images/logo/musa-card.png" alt="musa-card">
+              <span>Hoàn tiền <br> 15%</span>
+            </a>
+            <a class="menu-services_items tiki-icon" routerLink="">
+              <img src="assets\images\logo\musa-now.png" alt="musa-now">
+              <span>Giao nhanh <br> 2h & hôm sau</span>
+            </a>
+            <a class="menu-services_items tiki-icon" routerLink="">
+              <img src="assets\images\logo\musa-ngon.png" alt="musa-ngon">
+              <span>Thực phẩm <br> tươi sống</span>
+            </a>
+            <div class="menu-services_items">
+              <img src="assets/images/insignia.png" alt="">
+              <span>Sản phẩm <br> chính hiệu</span>
+            </div>
+            <a class="menu-services_items" routerLink="">
+              <img src="assets/images/return-box.png" alt="">
+              <span>Đổi trả <br> 30 ngày</span>
+            </a>
+            <a routerLink=""></a>
+            <a routerLink=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dang nhap -->
+  <div class="header-modal" [style.display]="checkClickModalLogin ? 'none' : 'block'">
+    <div class="header-modal-content">
+      <div class="header-modal-user">
+        <a class="header-modal-close" (click)="modalLogin()">
+          <span aria-hidden="true">&times;</span>
+        </a>
+        <div class="header-modal-user-left">
+          <h2>Đăng nhập</h2>
+          <p>Đăng nhập để theo dõi đơn hàng, lưu
+            danh sách sản phẩm yêu thích, nhận
+            nhiều ưu đãi hấp dẫn.</p>
+          <img src="https://frontend.tikicdn.com/_desktop-next/static/img/graphic-map.png">
+        </div>
+
+        <div class="header-modal-user-right">
+          <div class="header-modal-header">
+            <div class="header-modal-tab header-modal-tab-left header-modal-tab-active">
+              Đăng nhập
+            </div>
+
+            <div class="header-modal-tab header-modal-tab-right" (click)="modalRegistor()">
+              Tạo tài khoản
+            </div>
+
+          </div>
+          <div class="header-modal-tab-content">
+            <form [formGroup]="formLogin" (ngSubmit)="login()">
+              <div class="form-item">
+                <label for="email">Email / SĐT</label>
+                <input name="email" formControlName="email"
+                [ngClass]="{ 'is-invalid': submittedLogin && f.email.errors }" placeholder="Nhập Email hoặc Số điện thoại">
+                <div *ngIf="submittedLogin && fLogin.email.errors" class="invalid-feedback">
+                  <div *ngIf="fLogin.email.errors.required">Tài khoản không được để trống</div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="password">Mật khẩu</label>
+                <input type="password" formControlName="password" name="password"
+                  placeholder="Mật khẩu từ 6 đến 32 ký tự" [ngClass]="{ 'is-invalid': submittedLogin && f.password.errors }">
+                  <div *ngIf="submittedLogin && fLogin.password.errors" class="invalid-feedback">
+                    <div *ngIf="fLogin.password.errors.required">Mật khẩu không được để trống</div>
+                    <div *ngIf="fLogin.password.errors.minlength">Mật khẩu phải dài hơn 6 kí tự</div>
+                    <div *ngIf="fLogin.password.errors.maxlength">Mật khẩu phải ngắn hơn 32 kí tự</div>
+                </div>
+              </div>
+              <div style="padding-left: 75px;">
+                <p class="forgot-password">Quên mật khẩu? Nhấn vào <a>đây</a></p>
+                <button type="submit" class="btn">Đăng nhập</button>
+              </div>
+            </form>
+            <div style="padding-left: 75px;">
+              <button class="btn d-none" style="background:rgb(223, 74, 50);color: white;">
+                <span>
+                  <i class="fi flaticon-google-plus"></i>
+                </span>
+                Đăng nhập bằng Google
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-modal" [style.display]="checkClickModalRegistor ? 'none' : 'block'">
+    <div class="header-modal-content">
+      <div class="header-modal-user">
+        <a class="header-modal-close" (click)="modalRegistor()">
+          <span aria-hidden="true">&times;</span>
+        </a>
+        <div class="header-modal-user-left">
+          <h2>Tạo tài khoản</h2>
+          <p>Tạo tài khoản để theo dõi đơn hàng, lưu
+            danh sách sản phẩm yêu thích, nhận
+            nhiều ưu đãi hấp dẫn.</p>
+          <img src="https://frontend.tikicdn.com/_desktop-next/static/img/graphic-map.png">
+        </div>
+
+        <div class="header-modal-user-right">
+          <div class="header-modal-header">
+            <div class="header-modal-tab header-modal-tab-left" (click)="modalLogin()">
+              Đăng nhập
+            </div>
+            <div class="header-modal-tab header-modal-tab-right header-modal-tab-active">
+              Tạo tài khoản
+            </div>
+          </div>
+          <div class="header-modal-tab-content">
+            <form [formGroup]="formRegis" (ngSubmit)="onRegis()">
+              <div class="form-item">
+                <label for="fullName">Họ tên</label>
+                <input name="fullName" formControlName="fullName" 
+                  [ngClass]="{ 'is-invalid': submitted && f.fullName.errors}" placeholder="Nhập họ và tên">
+                <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                  <div *ngIf="f.fullName.errors.required">Họ tên không được để trống</div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="phoneNumber">SĐT</label>
+                <input name="phoneNumber" formControlName="phoneNumber" 
+                 [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }"
+                  placeholder="Nhập số điện thoại">
+                <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+                  <div *ngIf="f.phoneNumber.errors.required">SĐT không được để trống</div>
+                  <div *ngIf="f.phoneNumber.errors.minlength">SĐT không chính xác</div>
+                  <div *ngIf="f.phoneNumber.errors.maxlength">SĐT không chính xác</div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input name="email" formControlName="email" 
+                 [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                  placeholder="Nhập email">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Email không được để trống</div>
+                  <div *ngIf="f.email.errors.email">Email không chính xác</div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="password">Mật khẩu</label>
+                <input type="password" formControlName="password" 
+                  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" name="password"
+                  placeholder="Mật khẩu từ 6 đến 32 ký tự">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                  <div *ngIf="f.password.errors.required">Mật khẩu không được để trống</div>
+                  <div *ngIf="f.password.errors.minlength">Mật khẩu phải dài hơn 6 kí tự</div>
+                  <div *ngIf="f.password.errors.maxlength">Mật khẩu phải ngắn hơn 32 kí tự</div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="date">Ngày sinh</label>
+                <input type="date" formControlName="date" [ngClass]="{ 'is-invalid': submitted && f.date.errors }"
+                  name="date">
+                <div *ngIf="submitted && f.date.errors" class="invalid-feedback">
+                  <div *ngIf="f.date.errors.required">Ngày sinh không được để trống</div>
+                </div>
+              </div>
+              <div style="padding-left: 75px;">
+                <button class="btn" type="submit"
+                  style="background:rgb(216,191,216);color: rgb(74, 74, 74); font-weight: 500;">
+                  Tạo tài khoản
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="mobile-ver">
+  <header *ngIf="isMobile" class="header">
+    <div class="padding-17">
+      <div class="header-menu">
+        <div class="mobile-vers">
+          <nav class="nav navbar align-items-center justify-content-between">
+            <span (click)="filterActive()" class="menu-btn">
+              <i class="fi flaticon-menu"></i>
+            </span>
+            <div class="header-logo">
+              <a routerLink="">
+                <img src="assets/images/logo/musa_logo.png" alt="">
+              </a>
+            </div>
+            <a href="cart.html">
+              <i class="fi flaticon-cart"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="form-search d-flex justify-content-center">
+          <form>
+            <input class="form-control" type="search" placeholder="Bạn đang tìm kiếm gì?" aria-label="Search">
+            <i class="fi flaticon-loupe"></i>
+          </form>
+        </div>
+      </div>
+      <div class="header-menu-list" id="menu">
+        <div class="inner" id="inner">
+          <div class="inner-header">
+            <a href="" class="sign-in">
+              <span class="icon-user">
+                <i class="fi flaticon-profile-user"></i>
+              </span>
+              <div>
+                <h6>Đăng nhập</h6>
+                <span>Tài khoản</span>
+              </div>
+              <span class="icon-arrow">
+                <i class="fi flaticon-right"></i>
+              </span>
+            </a>
+          </div>
+          <div class="inner-content">
+            <div class="list-product">
+              <div class="list-product-item">
+                <a class="product-title" href="index.html">
+                  <h6>
+                    <i class="fi flaticon-homepage"></i>
+                    Trang chủ
+                  </h6>
+                  <span class="fi flaticon-right"></span>
+                </a>
+              </div>
+              <div class="list-product-item">
+                <a class="product-title" data-toggle="collapse" href="#collapse1">
+                  <h6>
+                    <i class="fi flaticon-list"></i>
+                    Danh sách sản phẩm
+                  </h6>
+                  <span class="fi flaticon-right"></span>
+                </a>
+                <ul id="collapse1" class="menu-child collapse">
+                  <a routerLink="product-phone">
+                    <li>
+                      <i class="fi flaticon-phone-1"></i>
+                      Điện Thoại - Máy Tính Bảng
+                    </li>
+                  </a>
+                  <a routerLink="product-electronic">
+                    <li>
+                      <i class="fi flaticon-television"></i>
+                      Điện Tử - Điện Lạnh
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-headphones"></i>
+                      Phụ kiện thiết bị số
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-laptop"></i>
+                      Laptop - Thiết bị IT
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-camera"></i>
+                      Máy Ảnh - Quay Phim
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-laptop"></i>
+                      Laptop - Thiết bị IT
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-washing-machine"></i>
+                      Điện Gia Dụng
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-sprayer"></i>
+                      Hàng Tiêu Dùng - Thực Phẩm
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-feeding-bottle"></i>
+                      Đồ Chơi, Mẹ & Bé
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-shirt"></i>
+                      Thời trang - Phụ kiện
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-basketball-ball"></i>
+                      Thể Thao - Dã Ngoại
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-motorcycle"></i>
+                      Xe Máy, Ô tô, Xe Đạp
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-earth-grid"></i>
+                      Hàng Quốc Tế
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-book"></i>
+                      Sách, VPP & Quà Tặng
+                    </li>
+                  </a>
+                  <a routerLink="">
+                    <li>
+                      <i class="flaticon-voucher"></i>
+                      Voucher - Dịch Vụ - Thẻ Cào
+                    </li>
+                  </a>
+                </ul>
+              </div>
+              <div class="list-product-item">
+                <a class="product-title" href="">
+                  <h6>
+                    <i class="fi flaticon-profile-user"></i>
+                    Quản lý tài khoản
+                  </h6>
+                  <span class="fi flaticon-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" (click)="filterInactive()"></div>
+      </div>
+    </div>
+  </header>
+</section>

@@ -1,0 +1,18 @@
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.deps.json
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.csprojAssemblyReference.cache
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.AssemblyInfoInputs.cache
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.AssemblyInfo.cs
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.pdb
+D:\Do An Nganh\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.csproj.CoreCompileInputs.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.deps.json
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\bin\Debug\netcoreapp3.1\Ecommerce.Common.pdb
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.csprojAssemblyReference.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.AssemblyInfoInputs.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.AssemblyInfo.cs
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.csproj.CoreCompileInputs.cache
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.dll
+D:\1751010114_DoThienPhuoc\ecommerce\Ecommerce\Ecommerce.Common\obj\Debug\netcoreapp3.1\Ecommerce.Common.pdb

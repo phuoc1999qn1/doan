@@ -1,0 +1,24 @@
+<h4>Đơn hàng của tôi</h4>
+<section class="order" style="background-color: #fff; padding: 12px 20px;  border-radius: 4px;">
+    <table *ngIf=order class="table table-hover">
+        <thead>
+          <tr>
+            <th style="width:14%">Mã đơn hàng</th>
+            <th style="width:14%">Ngày mua</th>
+            <th class="text-center" style="width:39%">Sản phẩm</th>
+            <th class="text-center" style="width:10%">Tổng tiền</th>
+            <th style="width:23%">Trạng thái đơn hàng</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let o of order" >
+            <td class="text-center" >{{o.orderId}}</td>
+            <td >{{o.orderDate}}</td>
+            <td> {{o.proName}}</td>
+            <td class="text-center">{{o.tongTien | number}}đ</td>
+            <td *ngIf="o.status == 1">Giao hàng thành công</td>
+            <td *ngIf="o.status == 0">Giao hàng thất bại</td>
+          </tr>
+        </tbody>
+      </table>
+</section>

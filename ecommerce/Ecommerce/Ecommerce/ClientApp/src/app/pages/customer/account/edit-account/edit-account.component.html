@@ -1,0 +1,49 @@
+<div class="account-edit" *ngIf="users">
+    <form class="form" [formGroup]="formEditInf" (ngSubmit)="EditInf()">
+        <div class="form-item">
+            <div class="form-item-left">
+                <label for="fullName">Họ tên</label>
+            </div>
+            <div class="form-item-right">
+                <input name="fullName" formControlName="fullName"
+                    [ngClass]="{ 'is-invalid': submitted && f.fullName.errors}">
+                <div *ngIf="submitted && f.fullName.errors" class="invalid-feedback">
+                    <div *ngIf="f.fullName.errors.required">Họ tên không được để trống</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="form-item-left">
+                <label for="phoneNumber">Số điện thoại</label>
+            </div>
+            <div class="form-item-right">
+                <input type="number" name="phoneNumber" formControlName="phoneNumber"
+                    [ngClass]="{ 'is-invalid': submitted && f.phoneNumber.errors }">
+                <div *ngIf="submitted && f.phoneNumber.errors" class="invalid-feedback">
+                    <div *ngIf="f.phoneNumber.errors.required">SĐT không được để trống</div>
+                    <div *ngIf="f.phoneNumber.errors.minlength">SĐT không chính xác</div>
+                    <div *ngIf="f.phoneNumber.errors.maxlength">SĐT không chính xác</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-item">
+            <div class="form-item-left">
+                <label for="email">Email</label>
+
+            </div>
+            <div class="form-item-right">
+                <input name="email" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email không được để trống</div>
+                    <div *ngIf="f.email.errors.email">Email không chính xác</div>
+                </div>
+            </div>
+        </div>
+        <div class="form-item">
+            <label class="input-label">&nbsp;</label>
+            <button type="submit" class="btn-submit">
+                Cập nhật
+            </button>
+        </div>
+    </form>
+</div>
